@@ -51,6 +51,7 @@ function extract()
         unar -o "$extract_dir" $1
         if [ $? -eq 0 ];
         then
+                echo Extracted $extract_dir
                 touch $extract_dir/.extracted
         fi
 }
